@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WORLD TOUR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader"></div>
+
+  <!-- Main Content -->
+  <div class="container" id="main-content">
+    <nav class="navbar">
+      <div class="logo">WORLD EXPLORER</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+      <h1 class="hero-text">Makes Your Travel Excursions Easy</h1>
+      <p class="sub-hero">Unforgettable travel experiences await you.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="content" id="about">
+      <h2 class="section-title">About Us</h2>
+      <p>At WorldExplorer, we curate the best travel packages tailored to your wanderlust. Whether you're seeking serene beaches, snowy mountains, or bustling cities — we’ve got you covered.</p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="content" id="destinations">
+      <h2 class="section-title">Top Destinations</h2>
+      <p>Explore Paris, Bali, Tokyo, New York, and more. Our handpicked destinations offer something for every kind of traveler.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Ready to book your trip? Reach out to us at <a href="mailto:travel@worldexplorer.com">travel@exploreworld.com</a> or call +1-800-EXPLORE.</p>
+    </section>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const content = document.getElementById('main-content');
+      loader.classList.add('fade-out');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        content.style.display = 'block';
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
